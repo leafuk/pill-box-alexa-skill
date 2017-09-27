@@ -57,3 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# exlude Zips
+*.zip
+
+# exlude gists folder
+gists/

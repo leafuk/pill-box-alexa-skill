@@ -39,7 +39,7 @@ var handlers = {
         
                 db.close();
     
-                alexa.emit(':tell', 'Hi! Brenda last took her tablets ' + momentLastTaken.fromNow() + '. Goodbye.');
+                alexa.emit(':tell', 'Hi! Brenda last took her tablets ' + momentLastTaken.fromNow().replace('minute ', '<phoneme alphabet="ipa" ph="ˈmɪnɪt">minute</phoneme> ') + '. Goodbye.');
             });   
         });
     }
